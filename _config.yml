@@ -13,9 +13,10 @@ timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: Jgzkan's notebook # the main title
-tagline: an archive on studying data analysis # it will display as the sub-title
+tagline: Welcome to my archive! # it will display as the sub-title
 description: >- # used by seo meta and the atom feed
-  Kyunghee univ. Industrial Management Systems Engineering 21
+  an archive on studying data analysis
+  Studying @ Kyunghee univ. Industrial Management Systems Engineering
 
 # Fill in the protocol & hostname for your site.
 url: "https://jgzkan.github.io/"
@@ -27,7 +28,7 @@ instagram:
   username: jgzkan # change to your instagram username
 
 social:
-  name: JingiChae # Change to your full name.
+  name: JINGI CHAE # Change to your full name.
   email: 08707@khu.ac.kr # change to your email address
   links:
     - https://instagram.com/jgzkan # Change to your Instagram homepage
