@@ -12,34 +12,26 @@ lang: ko
 timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
-# ↓ --------------------------
-
 title: Jgzkan's notebook # the main title
-
 tagline: an archive on studying data analysis # it will display as the sub-title
-
 description: >- # used by seo meta and the atom feed
   Kyunghee univ. Industrial Management Systems Engineering 21
 
 # Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://jgzkan.github.io/"
 
-github: 
+github:
   username: jgzkan # change to your github username
 
 instagram:
-  username: jgzkan # change to your twitter username
+  username: jgzkan # change to your instagram username
 
 social:
-  # Change to your full name.
-  # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: JingiChae
+  name: JingiChae # Change to your full name.
   email: 08707@khu.ac.kr # change to your email address
-  links: www.instagram.com/jgzkan
-    # The first element serves as the copyright owner's link
-    - https://instagram.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+  links:
+    - https://instagram.com/jgzkan # Change to your Instagram homepage
+    - https://github.com/jgzkan # Change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -52,9 +44,6 @@ webmaster_verifications:
   yandex: # fill in your Yandex verification code
   baidu: # fill in your Baidu verification code
   facebook: # fill in your Facebook verification code
-
-# ↑ --------------------------
-# The end of `jekyll-seo-tag` settings
 
 # Web Analytics Settings
 analytics:
@@ -76,31 +65,19 @@ pageviews:
   provider: # now only supports 'goatcounter'
 
 # Prefer color scheme setting.
-#
-# Note: Keep empty will follow the system prefer color by default,
-# and there will be a toggle to switch the theme between dark and light
-# on the bottom left of the sidebar.
-#
 # Available options:
-#
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
-#
 theme_mode: # [light | dark]
 
 # The CDN endpoint for media resources.
-# Notice that once it is assigned, the CDN url
-# will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
-#
-# e.g. 'https://cdn.com'
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
 avatar:
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
-# It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+social_preview_image:
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -108,14 +85,11 @@ toc: true
 comments:
   # Global switch for the post comment system. Keeping it empty means disabled.
   provider: # [disqus | utterances | giscus]
-  # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>
     issue_term: # < url | pathname | title | ...>
-  # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
     repo_id:
@@ -131,17 +105,12 @@ comments:
 assets:
   self_host:
     enabled: # boolean, keep empty means false
-    # specify the Jekyll environment, empty means both
-    # only works if `assets.self_host.enabled` is 'true'
     env: # [development | production]
 
 pwa:
   enabled: true # the option for PWA feature (installable)
   cache:
     enabled: true # the option for PWA offline cache
-    # Paths defined here will be excluded from the PWA cache.
-    # Usually its value is the `baseurl` of another website that
-    # shares the same domain name as the current website.
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
@@ -155,9 +124,8 @@ baseurl: ""
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts:
     css_class: highlight
-    # default_lang: console
     span:
       line_numbers: false
     block:
@@ -171,14 +139,12 @@ collections:
 
 defaults:
   - scope:
-      path: "" # An empty string here means all files in the project
+      path: ""
       type: posts
     values:
       layout: post
-      comments: true # Enable comments in posts.
-      toc: true # Display TOC column in posts.
-      # DO NOT modify the following parameter unless you are confident enough
-      # to update the code of all other post links in this project.
+      comments: true
+      toc: true
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -186,7 +152,7 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs # see `site.collections`
+      type: tabs
     values:
       layout: page
       permalink: /:title/
