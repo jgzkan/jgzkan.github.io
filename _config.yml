@@ -9,23 +9,23 @@ theme: jekyll-theme-chirpy
 lang: ko
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: jgzkan's notebook # the main title
+title: Jgzkan's notebook # the main title
 
-tagline: 데이터 공부 기록 # it will display as the sub-title
+tagline: an archive on studying data analysis # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Kyunghee univ. Industrial Management Systems Engineering
+  Kyunghee univ. Industrial Management Systems Engineering 21
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: "https://jgzkan.github.io/"
 
-github:
+github: 
   username: jgzkan # change to your github username
 
 instagram:
@@ -34,11 +34,11 @@ instagram:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: jgchae
+  name: Jingi Chae
   email: 08707@khu.ac.kr # change to your email address
-  links:
+  links: www.instagram.com/jgzkan
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
+    - https://instagram.com/username # change to your twitter homepage
     - https://github.com/username # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
